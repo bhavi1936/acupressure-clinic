@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acupressure Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Acupressure Clinic</h1>
+            <p>Enter Patient Information and Treatment Visits</p>
+        </header>
+
+        <section class="form-section">
+            <h2>Patient Information</h2>
+            <form id="patientForm">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" required>
+
+                <label for="patientAge">Age:</label>
+                <input type="number" id="patientAge" required>
+
+                <label for="patientNumber">Phone Number:</label>
+                <input type="text" id="patientNumber" required>
+
+                <button type="submit">Add Patient</button>
+            </form>
+        </section>
+
+        <section class="treatment-section">
+            <h2>Treatment Visits</h2>
+            <table id="treatmentTable">
+                <thead>
+                    <tr>
+                        <th>Patient Name</th>
+                        <th>Treatment Date</th>
+                        <th>Therapies Suggested</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Treatment data will go here -->
+                </tbody>
+            </table>
+            <form id="treatmentForm">
+                <label for="treatmentDate">Treatment Date:</label>
+                <input type="date" id="treatmentDate" required>
+
+                <label for="therapiesSuggested">Therapies Suggested:</label>
+                <textarea id="therapiesSuggested" required></textarea>
+
+                <button type="submit">Add Treatment Visit</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
